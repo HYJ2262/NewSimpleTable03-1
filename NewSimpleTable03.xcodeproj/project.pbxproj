@@ -13,6 +13,7 @@
 		E54462EC228151A000B627C4 /* NewSimpleTable03.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = E54462EA228151A000B627C4 /* NewSimpleTable03.xcdatamodeld */; };
 		E54462EE228151A800B627C4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E54462ED228151A800B627C4 /* Assets.xcassets */; };
 		E54462F1228151A800B627C4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E54462EF228151A800B627C4 /* LaunchScreen.storyboard */; };
+		E54462FB22815E7100B627C4 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E54462FA22815E7000B627C4 /* DetailViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		E54462ED228151A800B627C4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E54462F0228151A800B627C4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		E54462F2228151A800B627C4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E54462FA22815E7000B627C4 /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +58,7 @@
 		E54462E2228151A000B627C4 /* NewSimpleTable03 */ = {
 			isa = PBXGroup;
 			children = (
+				E54462FA22815E7000B627C4 /* DetailViewController.swift */,
 				E54462E3228151A000B627C4 /* AppDelegate.swift */,
 				E54462E5228151A000B627C4 /* ViewController.swift */,
 				E54462E7228151A000B627C4 /* Main.storyboard */,
@@ -141,6 +144,7 @@
 				E54462E6228151A000B627C4 /* ViewController.swift in Sources */,
 				E54462EC228151A000B627C4 /* NewSimpleTable03.xcdatamodeld in Sources */,
 				E54462E4228151A000B627C4 /* AppDelegate.swift in Sources */,
+				E54462FB22815E7100B627C4 /* DetailViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -295,7 +299,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "-.NewSimpleTable03";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -312,7 +316,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "-.NewSimpleTable03";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
