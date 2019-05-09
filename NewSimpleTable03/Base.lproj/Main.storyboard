@@ -46,7 +46,7 @@
                                             </subviews>
                                         </tableViewCellContentView>
                                         <connections>
-                                            <segue destination="x4X-QH-3M0" kind="show" id="lKW-nI-Vcz"/>
+                                            <segue destination="x4X-QH-3M0" kind="show" identifier="GoDetail" id="lKW-nI-Vcz"/>
                                         </connections>
                                     </tableViewCell>
                                 </prototypes>
@@ -61,14 +61,64 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
-                    <navigationItem key="navigationItem" title="동물농장" id="Iv1-01-nLe"/>
+                    <navigationItem key="navigationItem" title="동물농장" id="Iv1-01-nLe">
+                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="iHA-8G-hsI">
+                            <connections>
+                                <segue destination="8Va-uN-Tpg" kind="show" identifier="GoAdd" id="gRv-sG-OLd"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                     <connections>
                         <outlet property="myTableView" destination="kXx-z8-pT7" id="MHe-Nz-hlq"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="916" y="686"/>
+            <point key="canvasLocation" x="713" y="686"/>
+        </scene>
+        <!--Add View Controller-->
+        <scene sceneID="xgw-Rl-dc4">
+            <objects>
+                <viewController id="8Va-uN-Tpg" customClass="AddViewController" customModule="NewSimpleTable03" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="PzD-wx-o4P">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Zue-7Z-BbO">
+                                <rect key="frame" x="37.5" y="144" width="300" height="300"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="300" id="OZp-gw-aaD"/>
+                                    <constraint firstAttribute="width" constant="300" id="mjX-Hc-jVC"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5Ck-li-bIA">
+                                <rect key="frame" x="123.5" y="514" width="128" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="128" id="HaT-MN-qTK"/>
+                                    <constraint firstAttribute="height" constant="21" id="Uic-dj-ENK"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="0.95548933744430542" green="0.84693902730941772" blue="0.82922965288162231" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="5Ck-li-bIA" firstAttribute="top" secondItem="Zue-7Z-BbO" secondAttribute="bottom" constant="70" id="IJW-bX-KFu"/>
+                            <constraint firstItem="Zue-7Z-BbO" firstAttribute="centerX" secondItem="PzD-wx-o4P" secondAttribute="centerX" id="UTG-kP-CeW"/>
+                            <constraint firstItem="Zue-7Z-BbO" firstAttribute="top" secondItem="Jdu-Zc-rvz" secondAttribute="top" constant="80" id="p0W-kf-Spb"/>
+                            <constraint firstItem="5Ck-li-bIA" firstAttribute="centerX" secondItem="PzD-wx-o4P" secondAttribute="centerX" id="t46-Ie-Zv8"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="Jdu-Zc-rvz"/>
+                    </view>
+                    <connections>
+                        <outlet property="ImageData" destination="Zue-7Z-BbO" id="6EM-5K-FWv"/>
+                        <outlet property="detailData" destination="5Ck-li-bIA" id="XhE-AN-mxp"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="B0f-8R-Nsx" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1832.8" y="704.79760119940033"/>
         </scene>
         <!--Detail View Controller-->
         <scene sceneID="SNa-AV-heO">
@@ -77,13 +127,13 @@
                     <view key="view" contentMode="scaleToFill" id="IQH-hf-idA">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="backgroundColor" red="0.70653951168060303" green="0.93414109945297241" blue="0.93541646003723145" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <viewLayoutGuide key="safeArea" id="dOr-Vb-ouJ"/>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="DwA-qn-Y25" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1770" y="686"/>
+            <point key="canvasLocation" x="1833" y="18"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="Cte-Jq-ach">

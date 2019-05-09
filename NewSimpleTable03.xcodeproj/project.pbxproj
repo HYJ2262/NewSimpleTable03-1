@@ -14,6 +14,7 @@
 		E54462EE228151A800B627C4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E54462ED228151A800B627C4 /* Assets.xcassets */; };
 		E54462F1228151A800B627C4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E54462EF228151A800B627C4 /* LaunchScreen.storyboard */; };
 		E54462FB22815E7100B627C4 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E54462FA22815E7000B627C4 /* DetailViewController.swift */; };
+		E590E3272283C83200D1AE39 /* AddViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E590E3262283C83200D1AE39 /* AddViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,7 @@
 		E54462F0228151A800B627C4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		E54462F2228151A800B627C4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E54462FA22815E7000B627C4 /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
+		E590E3262283C83200D1AE39 /* AddViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,6 +64,7 @@
 				E54462E3228151A000B627C4 /* AppDelegate.swift */,
 				E54462E5228151A000B627C4 /* ViewController.swift */,
 				E54462E7228151A000B627C4 /* Main.storyboard */,
+				E590E3262283C83200D1AE39 /* AddViewController.swift */,
 				E54462ED228151A800B627C4 /* Assets.xcassets */,
 				E54462EF228151A800B627C4 /* LaunchScreen.storyboard */,
 				E54462F2228151A800B627C4 /* Info.plist */,
@@ -141,6 +144,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E590E3272283C83200D1AE39 /* AddViewController.swift in Sources */,
 				E54462E6228151A000B627C4 /* ViewController.swift in Sources */,
 				E54462EC228151A000B627C4 /* NewSimpleTable03.xcdatamodeld in Sources */,
 				E54462E4228151A000B627C4 /* AppDelegate.swift in Sources */,

@@ -37,6 +37,22 @@ class ViewController: UIViewController, UITableViewDataSource {
          return animal.count
     }
 
+    //AddViewController 로 데이터 옮기기
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "GoAdd"{
+          let addVC = segue.destination as!AddViewController
+            //형변환 시켜준거임 -> as!AddViewController
+         //addVC.NameTest = self.title
+            addVC.NameTest = animal[0]
+            addVC.ImgData = "cat"
+            addVC.NameData = detailAnimal[0]
+        
+        }else if segue.identifier == "GoDetail"{
+            
+        }else{
+            print("seque Error")
+        }
+    }
 
 }
 
