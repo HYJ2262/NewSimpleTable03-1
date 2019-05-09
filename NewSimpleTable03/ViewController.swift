@@ -46,6 +46,7 @@ class ViewController: UIViewController, UITableViewDataSource {
             addVC.NameTest = animal[0]
             addVC.ImgData = "cat"
             addVC.NameData = detailAnimal[0]
+            
         
         }else if segue.identifier == "GoDetail"{
             
